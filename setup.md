@@ -38,18 +38,18 @@ npx expo start
 That's it! 🎉 You've successfully set up a React Native Expo app with Tailwind CSS and TypeScript.
 
 
-Make sure in your tailwind.config.js is setup like this 
+Make sure your tailwind.config.js is set up like this.
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     "./App.{js,jsx,ts,tsx}",
-    "./<custom directory>/**/*.{js,jsx,ts,tsx}",
-    "./app/(tabs)/index.tsx"
+    "./app/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {},
   },
   plugins: [],
 }
+
 
