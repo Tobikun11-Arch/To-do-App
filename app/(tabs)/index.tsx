@@ -1,12 +1,12 @@
 import { SafeAreaView, ScrollView } from 'react-native';
 import React from 'react';
-import SignUp from '../pages/Auth/SignUp';
+import HomePage from '../pages/Auth/HomePage'
 
 const Index = () => {
   return (
-    <SafeAreaView className='flex-1 bg-white'>
+    <SafeAreaView className='flex-1 bg-gray-200'>
     <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
-      <SignUp />
+      <HomePage />
     </ScrollView>
   </SafeAreaView>
   );
