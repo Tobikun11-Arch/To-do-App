@@ -15,7 +15,7 @@ export default function SignUp() {
 
 
             <View className='flex-row justify-between mt-4 w-full'>
-                <Link href={'/pages/Auth/Login'} asChild>
+                <Link href={'/pages/LIst/Task'} asChild>
                     <TouchableOpacity className='p-5 bg-white flex-1 rounded-md flex-col justify-between mr-3'>
                         <MaterialCommunityIcons name="clipboard-list-outline" size={35} color="blue" />
                         <View className='pt-5'>
