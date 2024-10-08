@@ -5,11 +5,9 @@ import Ionicons from '@expo/vector-icons/Ionicons';
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import AntDesign from '@expo/vector-icons/AntDesign';
-import { useNavigation } from '@react-navigation/native';
+import { Link } from 'expo-router';
 
 export default function SignUp() {
-    const navigation = useNavigation()
-
     return (
         <View className='flex-1 px-4 pb-4 pt-4' >
             <Entypo name="menu" size={35} color="black" />
@@ -17,23 +15,25 @@ export default function SignUp() {
 
 
             <View className='flex-row justify-between mt-4 w-full'>
-                <TouchableOpacity onPress={() => navigation.navigate('Login')}>
-                    <View className='p-5 bg-white flex-1 rounded-md flex-col justify-between mr-3'>
+                <Link href={'/pages/Auth/Login'} asChild>
+                    <TouchableOpacity className='p-5 bg-white flex-1 rounded-md flex-col justify-between mr-3'>
                         <MaterialCommunityIcons name="clipboard-list-outline" size={35} color="blue" />
                         <View className='pt-5'>
                             <Text className='font-semibold text-xl'>All</Text>
                             <Text className='font-normal text-gray-400'>0 Tasks</Text>
                         </View>
-                    </View>
-                </TouchableOpacity>
+                    </TouchableOpacity>
+                </Link>
 
-                <View className='p-5 bg-white flex-1 rounded-md flex-col justify-between'>
-                    <MaterialCommunityIcons name="notebook" size={35} color="gray" />
-                    <View className='pt-5'>
-                        <Text className='pt-3 font-semibold text-xl'>Study</Text>
-                        <Text className='font-normal text-gray-400'>0 Tasks</Text>
-                    </View>
-                </View>
+                <Link href={'./Login'} asChild>
+                    <TouchableOpacity className='p-5 bg-white flex-1 rounded-md flex-col justify-between'>
+                        <MaterialCommunityIcons name="notebook" size={35} color="gray" />
+                        <View className='pt-5'>
+                            <Text className='pt-3 font-semibold text-xl'>Study</Text>
+                            <Text className='font-normal text-gray-400'>0 Tasks</Text>
+                        </View>
+                    </TouchableOpacity>
+                </Link>
             </View>
 
             <View className='flex-row justify-between mt-4 w-full'>
