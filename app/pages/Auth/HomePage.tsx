@@ -9,10 +9,9 @@ import { Link } from 'expo-router';
 
 export default function SignUp() {
     return (
-        <View className='flex-1 px-4 pb-4 pt-4' >
+        <View className='flex-1 px-4 pb-4 pt-4'>
             <Entypo name="menu" size={35} color="black" />
             <Text className='font-bold text-2xl mt-1'>Lists</Text>
-
 
             <View className='flex-row justify-between mt-4 w-full'>
                 <Link href={'/pages/LIst/Task'} asChild>
