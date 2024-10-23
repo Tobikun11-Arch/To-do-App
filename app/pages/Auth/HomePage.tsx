@@ -24,7 +24,7 @@ export default function SignUp() {
                     </TouchableOpacity>
                 </Link>
 
-                <Link href={'./Login'} asChild>
+                <Link href={'/pages/LIst/Study'} asChild>
                     <TouchableOpacity className='p-5 bg-white flex-1 rounded-md flex-col justify-between'>
                         <MaterialCommunityIcons name="notebook" size={35} color="gray" />
                         <View className='pt-5'>
